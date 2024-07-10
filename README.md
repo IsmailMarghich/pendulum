@@ -28,25 +28,25 @@ coverage report
 ![Result](https://i.imgur.com/cUZswMK.png)
 ![Result](https://i.imgur.com/jI8ODVg.png)
 
-## Coverage improvement
+# Coverage improvement
 
-### Individual tests
-
-<The following is supposed to be repeated for each function (2 in total)>
-
-<Function 1>
-
-<Show a patch (diff) or a link to a commit made in your forked repository that shows the new/enhanced tests for function 1>
-
-<Provide a screenshot of the old coverage results for such function>
-
-<Provide a screenshot of the new coverage results for such function>
-
-<State the coverage improvement with a number and elaborate on why the coverage is improved>
+## Individual tests
 
 
+### Function 1
 
-<Function 2>
+Commit: https://github.com/IsmailMarghich/pendulum/commit/c3040be57a4017c596395710bd06fb0374f76780
+
+Before charges:
+
+![Result](https://i.imgur.com/uH98cyq.png)
+After changes:
+![Result](https://i.imgur.com/cMAgeEK.png)
+
+The coverage has been improved by 2 percentage points, I have achieved this by adding another test case for the add_duration method, which allows you to add Duration objects together with the '+' operator. Specifically I added a test case where a run time error should be raised if you try add a date and a datetime object together as they are not compatible.
+
+
+### Function 2
 
 <Show a patch (diff) or a link to a commit made in your forked repository that shows the new/enhanced tests for function 1>
 

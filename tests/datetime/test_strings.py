@@ -29,6 +29,14 @@ def test_to_timestring():
 
     assert d.to_time_string() == "14:15:16"
 
+def test_to_datetime_string():
+    d = pendulum.datetime(1975, 12, 25, 14, 15, 16)
+    assert d.to_datetime_string() == "1975-12-25 14:15:16"
+    
+def test_to_day_datetime_string():
+    d = pendulum.datetime(1975, 12, 25, 14, 15, 16)
+    assert d.to_day_datetime_string() == "Thu, Dec 25, 1975 2:15 PM"
+    
 
 def test_to_atom_string():
     d = pendulum.datetime(1975, 12, 25, 14, 15, 16, tz="local")
