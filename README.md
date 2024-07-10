@@ -20,6 +20,7 @@ I used coverage.py to measure the branch coverage of the project, since the proj
 
 <Show the coverage results provided by the existing tool with a screenshot>
 coverage run --branch -m pytest
+
 ![Result](https://i.imgur.com/Tqc38fu.png)
 ## Coverage improvement
 
