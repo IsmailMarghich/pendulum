@@ -1,11 +1,12 @@
 from __future__ import annotations
 
-from datetime import timedelta
+from datetime import date, timedelta
 
 import pytest
 
 import pendulum
 
+from pendulum.helpers import add_duration
 from tests.conftest import assert_date
 
 
@@ -86,3 +87,9 @@ def test_addition_invalid_type():
 
     with pytest.raises(TypeError):
         3 + d
+def test_add_duration_with_date():
+    dt = date(2023, 7, 11)
+    
+    with pytest.raises(RuntimeError):
+        add_duration(dt, hours=1, minutes=30, seconds=10, microseconds=0)
+    
