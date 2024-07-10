@@ -14,14 +14,13 @@ Programming language: Python
 
 ## Coverage measurement with existing tool
 
-<Inform the name of the existing tool that was executed and how it was executed>
 I used coverage.py to measure the branch coverage of the project, since the project used pytest I used these commands: 
 
 coverage run --branch -m pytest
 
 coverage report
 
-<Show the coverage results provided by the existing tool with a screenshot>
+Initial coverage results:
 
 ![Result](https://i.imgur.com/Tqc38fu.png)
 ![Result](https://i.imgur.com/pvoGiwP.png)
@@ -38,7 +37,6 @@ coverage report
 Commit: https://github.com/IsmailMarghich/pendulum/commit/c3040be57a4017c596395710bd06fb0374f76780
 
 Before charges:
-
 ![Result](https://i.imgur.com/uH98cyq.png)
 After changes:
 ![Result](https://i.imgur.com/cMAgeEK.png)
@@ -48,16 +46,26 @@ The coverage has been improved by 2 percentage points, I have achieved this by a
 
 ### Function 2
 
-<Show a patch (diff) or a link to a commit made in your forked repository that shows the new/enhanced tests for function 1>
+URL: https://github.com/IsmailMarghich/pendulum/commit/bb2bd87d3cde8e877267c66ee055fc3ef3083de6
 
-<Provide a screenshot of the old coverage results for such function>
+Before changes:
+![Result](https://i.imgur.com/s6T0ic6.png)
+After changes:
+![Result](https://i.imgur.com/eUazclM.png)
 
-<Provide a screenshot of the new coverage results for such function>
-
-<State the coverage improvement with a number and elaborate on why the coverage is improved>
+The coverage has been improved by 1 percentage points, I have achieved this by testing two string converstion methods which you can use on datetime objects. It seems this might have been forgotten by the developers, I made sure the methods return the correct output for a given input.
 
 ### Overall
 
-<Provide a screenshot of the old coverage results by running an existing tool (the same as you already showed at the beginning of the report)>
+Original coverage results:
+![Result](https://i.imgur.com/Tqc38fu.png)
+![Result](https://i.imgur.com/pvoGiwP.png)
+![Result](https://i.imgur.com/cUZswMK.png)
+![Result](https://i.imgur.com/jI8ODVg.png)
 
-<Provide a screenshot of the new coverage results by running the existing tool using all test modifications>
+New coverage results:
+![Result](https://i.imgur.com/xuiWINw.png)
+![Result](https://i.imgur.com/VmyLfxF.png)
+![Result](https://i.imgur.com/F3Udnnq.png)
+![Result](https://i.imgur.com/njZ4EY7.png)
+
